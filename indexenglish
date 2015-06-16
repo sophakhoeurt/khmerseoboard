@@ -1,0 +1,422 @@
+// Version: 2.0.10; Index
+
+global $forum_copyright, $forum_version, $webmaster_email, $scripturl, $context, $boardurl;
+
+// Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)
+// For more information see:
+//   - http://www.php.net/function.pspell-new
+//   - http://www.php.net/function.setlocale
+// Again, SPELLING SHOULD BE '' 99% OF THE TIME!!  Please read this!
+$txt['lang_locale'] = 'en_US';
+$txt['lang_dictionary'] = 'english';
+$txt['lang_spelling'] = 'american';
+
+// Ensure you remember to use uppercase for character set strings.
+$txt['lang_character_set'] = 'ISO-8859-1';
+// Character set and right to left?
+$txt['lang_rtl'] = false;
+// Capitalize day and month names?
+$txt['lang_capitalize_dates'] = true;
+
+$txt['days'] = array('អាទិត្យ', 'ច័ន្ទ', 'អង្គារ៍', 'ពុធ', 'ព្រហស្បត្តិ៍', 'សុក្រ', 'សៅរ៍');
+$txt['days_short'] = array('អា.', 'ច.', 'អ.', 'ព.', 'ព្រ.', 'សុ.', 'ស.');
+// Months must start with 1 => 'January'. (or translated, of course.)
+$txt['months'] = array(1 => 'មករា', 'កុម្ភៈ', 'មិនា', 'មេសា', 'ឧសភា', 'មិថុនា', 'កក្កដា', 'សីហា', 'កញ្ញា', 'តុលា', 'វិច្ឆិកា', 'ធ្នូ');
+$txt['months_titles'] = array(1 => 'មករា', 'កុម្ភៈ', 'មិនា', 'មេសា', 'ឧសភា', 'មិថុនា', 'កក្កដា', 'សីហា', 'កញ្ញា', 'តុលា', 'វិច្ឆិកា', 'ធ្នូ');
+$txt['months_short'] = array(1 => 'មក.', 'កុ.', 'មិ.', 'មេ.', 'ឧ.', 'មិថ.', 'ក.', 'សី.', 'ក.ញ.', 'តុ.', 'វិ'., 'ធ.');
+
+$txt['time_am'] = 'ព្រឹក';
+$txt['time_pm'] = 'ល្ងាច';
+
+$txt['newmessages0'] = 'is new';
+$txt['newmessages1'] = 'are new';
+$txt['newmessages3'] = 'ថ្មី';
+$txt['newmessages4'] = ',';
+
+$txt['admin'] = 'Admin';
+$txt['moderate'] = 'Moderate';
+
+$txt['save'] = 'រក្សាទុក';
+
+$txt['modify'] = 'កែប្រែ';
+$txt['forum_index'] = '%1$s - Index';
+$txt['members'] = 'សមាជិក';
+$txt['board_name'] = 'Board name';
+$txt['posts'] = 'បញ្ជូន';
+
+$txt['member_postcount'] = 'Posts';
+$txt['no_subject'] = '(អត់មានប្រធានបទ)';
+$txt['view_profile'] = 'មើល Profile';
+$txt['guest_title'] = 'ភ្ញៀវ';
+$txt['author'] = 'អ្នកនិពន្ធ';
+$txt['on'] = 'លើ';
+$txt['remove'] = 'លុប';
+$txt['start_new_topic'] = 'ចាប់ផ្ដើមអត្ថបទថ្មី';
+
+$txt['login'] = 'ចូល';
+// Use numeric entities in the below string.
+$txt['username'] = 'ឈ្មោះ';
+$txt['password'] = 'ពាក្យសំងាត់';
+
+$txt['username_no_exist'] = 'That username does not exist.';
+$txt['no_user_with_email'] = 'There are no usernames associated with that email.';
+
+$txt['board_moderator'] = 'Board Moderator';
+$txt['remove_topic'] = 'លុបអត្ថបទ';
+$txt['topics'] = 'អត្ថបទ';
+$txt['modify_msg'] = 'កែប្រែសារ';
+$txt['name'] = 'ឈ្មោះ';
+$txt['email'] = 'អ៊ីម៉ែល';
+$txt['subject'] = 'ប្រធានបទ';
+$txt['message'] = 'សារ';
+$txt['redirects'] = 'ត្រលប់';
+$txt['quick_modify'] = 'Modify Inline';
+
+$txt['choose_pass'] = 'ជ្រើសរើសពាក្យសំងាត់';
+$txt['verify_pass'] = 'បញ្ជាក់ពាក្យសំងាត់';
+$txt['position'] = 'ទីតាំង';
+
+$txt['profile_of'] = 'View the profile of';
+$txt['total'] = 'សរុប';
+$txt['posts_made'] = 'ផ្ញើ';
+$txt['website'] = 'Website';
+$txt['register'] = 'ចុះឈ្មោះ';
+$txt['warning_status'] = 'Warning Status';
+$txt['user_warn_watch'] = 'User is on moderator watch list';
+$txt['user_warn_moderate'] = 'User posts join approval queue';
+$txt['user_warn_mute'] = 'User is banned from posting';
+$txt['warn_watch'] = 'មើលហើយ';
+$txt['warn_moderate'] = 'Moderated';
+$txt['warn_mute'] = 'បិទសំលេងហើយ';
+
+$txt['message_index'] = 'ប្រអប់សារ';
+$txt['news'] = 'ពត៍មាន';
+$txt['home'] = 'គេហទំព័រ';
+
+$txt['lock_unlock'] = 'ចាក់ឬបើកសោប្រធានបទ';
+$txt['post'] = 'បញូន';
+$txt['error_occured'] = 'មានកំហុស!';
+$txt['at'] = 'នៅ';
+$txt['logout'] = 'ចាក់ចេញ';
+$txt['started_by'] = 'ផ្ដើមដោយ';
+$txt['replies'] = 'ឆ្លើយតប';
+$txt['last_post'] = 'ប្រធានបទចុងក្រោយ';
+$txt['admin_login'] = 'Administration Login';
+// Use numeric entities in the below string.
+$txt['topic'] = 'អត្ថបទ';
+$txt['help'] = 'ជួយ';
+$txt['notify'] = 'រាយការណ៍';
+$txt['unnotify'] = 'មិនរាយការណ៍';
+$txt['notify_request'] = 'Do you want a notification email if someone replies to this topic?';
+// Use numeric entities in the below string.
+$txt['regards_team'] = 'Regards,' . "\n" . 'The ' . $context['forum_name'] . ' Team.';
+$txt['notify_replies'] = 'Notify of replies';
+$txt['move_topic'] = 'ប្ដូរអត្ថបទ';
+$txt['move_to'] = 'ប្ដូរទៅ';
+$txt['pages'] = 'ទំព័រ';
+$txt['users_active'] = 'Users active in past %1$d minutes';
+$txt['personal_messages'] = 'Personal Messages';
+$txt['reply_quote'] = 'Reply with quote';
+$txt['reply'] = 'ឆ្លើយតប';
+$txt['reply_noun'] = 'ឆ្លើយតប';
+$txt['approve'] = 'យល់ព្រម';
+$txt['approve_all'] = 'យល់ព្រមទាំងអស់';
+$txt['awaiting_approval'] = 'រង់ចាំការយល់ព្រម';
+$txt['attach_awaiting_approve'] = 'Attachments awaiting approval';
+$txt['post_awaiting_approval'] = 'Note: This message is awaiting approval by a moderator.';
+$txt['there_are_unapproved_topics'] = 'There are %1$s topics and %2$s posts awaiting approval in this board. Click <a href="%3$s">here</a> to view them all.';
+
+$txt['msg_alert_none'] = 'មិនមានសារ...';
+$txt['msg_alert_you_have'] = 'អ្នកមាន......';
+$txt['msg_alert_messages'] = 'សារ';
+$txt['remove_message'] = 'លុបសារនេះ';
+
+$txt['online_users'] = 'អ្នក Online';
+$txt['personal_message'] = 'សារផ្ទាល់ខ្លួន';
+$txt['jump_to'] = 'លោតទៅ';
+$txt['go'] = 'ទៅ';
+$txt['are_sure_remove_topic'] = 'តើអ្នកប្រាកដទេថាចង់លុបអត្ថបទនេះ?';
+$txt['yes'] = 'បាទ';
+$txt['no'] = 'ទេ';
+
+$txt['search_end_results'] = 'លទ្ធផលបញ្ចប់';
+$txt['search_on'] = 'លើ';
+
+$txt['search'] = 'ស្វែងរក';
+$txt['all'] = 'ទាំងអស់';
+
+$txt['back'] = 'ត្រលប់ក្រោយវិញ';
+$txt['password_reminder'] = 'ពាក្យសំងាត់ត្រូវបានចងចាំ';
+$txt['topic_started'] = 'អត្ថបទចាប់ផ្ដើមដោយ';
+$txt['title'] = 'ចំណងជើង';
+$txt['post_by'] = 'បញ្ជូនដោយ';
+$txt['memberlist_searchable'] = 'Searchable list of all registered members.';
+$txt['welcome_member'] = 'សូមស្វាគមន៍';
+$txt['admin_center'] = 'Administration Center';
+$txt['last_edit'] = 'ការកែប្រែចុងក្រោយ';
+$txt['notify_deactivate'] = 'Would you like to deactivate notification on this topic?';
+
+$txt['recent_posts'] = 'Recent Posts';
+
+$txt['location'] = 'តំបន់';
+$txt['gender'] = 'ភេទ';
+$txt['date_registered'] = 'ទិន្នន័យដែលបានចុះឈ្មោះ';
+
+$txt['recent_view'] = 'View the most recent posts on the forum.';
+$txt['recent_updated'] = 'is the most recently updated topic';
+
+$txt['male'] = 'ភេទប្រុស';
+$txt['female'] = 'ភេទស្រី';
+
+$txt['error_invalid_characters_username'] = 'Invalid character used in Username.';
+
+$txt['welcome_guest'] = 'Welcome, <strong>%1$s</strong>. Please <a href="' . $scripturl . '?action=login">login</a> or <a href="' . $scripturl . '?action=register">register</a>.';
+$txt['login_or_register'] = 'Please <a href="' . $scripturl . '?action=login">login</a> or <a href="' . $scripturl . '?action=register">register</a>.';
+$txt['welcome_guest_activate'] = '<br />Did you miss your <a href="' . $scripturl . '?action=activate">activation email</a>?';
+$txt['hello_member'] = 'សួស្ដី,';
+// Use numeric entities in the below string.
+$txt['hello_guest'] = 'សូមស្វាគមន៍,';
+$txt['welmsg_hey'] = 'សូស្ដី,';
+$txt['welmsg_welcome'] = 'សូមស្វាគមន៍,';
+$txt['welmsg_please'] = 'សូម....';
+$txt['select_destination'] = 'សូមធ្វើការជ្រើសរើសគោលបំណង';
+
+// Escape any single quotes in here twice.. 'it\'s' -> 'it\\\'s'.
+$txt['posted_by'] = 'បញ្ជូនដោយ';
+
+$txt['icon_smiley'] = 'Smiley';
+$txt['icon_angry'] = 'Angry';
+$txt['icon_cheesy'] = 'Cheesy';
+$txt['icon_laugh'] = 'Laugh';
+$txt['icon_sad'] = 'Sad';
+$txt['icon_wink'] = 'Wink';
+$txt['icon_grin'] = 'Grin';
+$txt['icon_shocked'] = 'Shocked';
+$txt['icon_cool'] = 'Cool';
+$txt['icon_huh'] = 'Huh';
+$txt['icon_rolleyes'] = 'Roll Eyes';
+$txt['icon_tongue'] = 'Tongue';
+$txt['icon_embarrassed'] = 'Embarrassed';
+$txt['icon_lips'] = 'Lips sealed';
+$txt['icon_undecided'] = 'Undecided';
+$txt['icon_kiss'] = 'Kiss';
+$txt['icon_cry'] = 'Cry';
+
+$txt['moderator'] = 'Moderator';
+$txt['moderators'] = 'Moderators';
+
+$txt['mark_board_read'] = 'Mark Topics as Read for this Board';
+$txt['views'] = 'មើល';
+$txt['new'] = 'ថ្មី';
+
+$txt['view_all_members'] = 'មើលសមាជិកទាំងអស់';
+$txt['view'] = 'មើល';
+
+$txt['viewing_members'] = 'សមាជិកកំពុងមើល %1$s to %2$s';
+$txt['of_total_members'] = 'of %1$s សរុបសមាជិក';
+
+$txt['forgot_your_password'] = 'បំផ្លេចពាក្យសំងាត់របស់អ្នក';
+
+$txt['date'] = 'ថ្ងៃទី';
+// Use numeric entities in the below string.
+$txt['from'] = 'មកពី';
+$txt['check_new_messages'] = 'ពិនិត្យសារថ្មីៗ';
+$txt['to'] = 'To';
+
+$txt['board_topics'] = 'អត្ថបទ';
+$txt['members_title'] = 'សមាជិក';
+$txt['members_list'] = 'បញ្ជីសមាជិក';
+$txt['new_posts'] = 'បញ្ជូនថ្មី';
+$txt['old_posts'] = 'អត់មានការបញ្ជូនថ្មីទេ';
+$txt['redirect_board'] = 'Redirect Board';
+
+$txt['sendtopic_send'] = 'ផ្ញើ';
+$txt['report_sent'] = 'របាយការណ៍របស់អ្នកត្រូវបានបញ្ជូនបានដោយជោគជ័យ.';
+
+$txt['time_offset'] = 'Time Offset';
+$txt['or'] = 'ឬ';
+
+$txt['no_matches'] = 'Sorry, no matches were found';
+
+$txt['notification'] = 'Notification';
+
+$txt['your_ban'] = 'Sorry %1$s, you are banned from using this forum!';
+$txt['your_ban_expires'] = 'This ban is set to expire %1$s.';
+$txt['your_ban_expires_never'] = 'This ban is not set to expire.';
+$txt['ban_continue_browse'] = 'You may continue to browse the forum as a guest.';
+
+$txt['mark_as_read'] = 'Mark ALL messages as read';
+
+$txt['hot_topics'] = 'Hot Topic (More than %1$d replies)';
+$txt['very_hot_topics'] = 'Very Hot Topic (More than %1$d replies)';
+$txt['locked_topic'] = 'អត្ថបទជាប់សោ';
+$txt['normal_topic'] = 'អត្ថបទធម្មតា';
+$txt['participation_caption'] = 'អត្ថបទដែលអ្នកបានឆ្លើយតប';
+
+$txt['go_caps'] = 'ទៅ';
+
+$txt['print'] = 'បោះពុម្ព';
+$txt['profile'] = 'Profile';
+$txt['topic_summary'] = 'អត្ថបទសង្ខេប';
+$txt['not_applicable'] = 'N/A';
+$txt['message_lowercase'] = 'សារ';
+$txt['name_in_use'] = 'ឈ្មោះនេះត្រូវបានប្រើប្រាស់រូចហើយដោយសមាជីកផ្សេងទៀត.';
+
+$txt['total_members'] = 'សរុបសមាជិកទាំងអស់';
+$txt['total_posts'] = 'សរុបការបញ្ជូនទាំងអស់';
+$txt['total_topics'] = 'អត្ថបទសរុបទាំងអស់';
+
+$txt['mins_logged_in'] = 'Minutes to stay logged in';
+
+$txt['preview'] = 'Preview';
+$txt['always_logged_in'] = 'Always stay logged in';
+
+$txt['logged'] = 'Logged';
+// Use numeric entities in the below string.
+$txt['ip'] = 'IP';
+
+$txt['www'] = 'WWW';
+
+$txt['by'] = 'ដោយ';
+
+$txt['hours'] = 'ម៉ោង';
+$txt['days_word'] = 'ថ្ថៃ';
+
+$txt['newest_member'] = ', សមាជិកថ្មីបំផុត.';
+
+$txt['search_for'] = 'Search for';
+
+$txt['aim'] = 'AIM';
+// In this string, please use +'s for spaces.
+$txt['aim_default_message'] = 'Hi.+Are+you+there?';
+$txt['aim_title'] = 'AOL Instant Messenger';
+$txt['icq'] = 'ICQ';
+$txt['icq_title'] = 'ICQ Messenger';
+$txt['msn'] = 'MSN';
+$txt['msn_title'] = 'MSN Messenger';
+$txt['yim'] = 'YIM';
+$txt['yim_title'] = 'Yahoo Instant Messenger';
+
+$txt['maintain_mode_on'] = 'Remember, this forum is in \'Maintenance Mode\'.';
+
+$txt['read'] = 'អាន';
+$txt['times'] = 'ពេលវេលា';
+
+$txt['forum_stats'] = 'Forum Stats';
+$txt['latest_member'] = 'Latest Member';
+$txt['total_cats'] = 'Total Categories';
+$txt['latest_post'] = 'Latest Post';
+
+$txt['you_have'] = 'You\'ve got';
+$txt['click'] = 'ចុច';
+$txt['here'] = 'ទីនេះ';
+$txt['to_view'] = 'ដើម្បីមើល.';
+
+$txt['total_boards'] = 'Total Boards';
+
+$txt['print_page'] = 'បោះពុម្ពទំព័រ';
+
+$txt['valid_email'] = 'This must be a valid email address.';
+
+$txt['geek'] = 'I am a geek!!';
+$txt['info_center_title'] = '%1$s - Info Center';
+
+$txt['send_topic'] = 'ផ្ញើអត្ថបទនេះ';
+
+$txt['sendtopic_title'] = 'ផ្ញើអត្ថបទនេះ &quot;%1$s&quot; ទៅមិត្តភក្ដិ.';
+$txt['sendtopic_sender_name'] = 'ឈ្មោះរបស់អ្នក';
+$txt['sendtopic_sender_email'] = 'អ៊ីម៉ែលរបស់អ្នក';
+$txt['sendtopic_receiver_name'] = 'ឈ្មោះអ្នកទទួល';
+$txt['sendtopic_receiver_email'] = 'អ៊ីម៉ែលអ្នកទទួល';
+$txt['sendtopic_comment'] = 'Add a comment';
+
+$txt['allow_user_email'] = 'Allow users to email me';
+
+$txt['check_all'] = 'ពិនិត្យមើលទាំងអស់';
+
+// Use numeric entities in the below string.
+$txt['database_error'] = 'Database Error';
+$txt['try_again'] = 'Please try again.  If you come back to this error screen, report the error to an administrator.';
+$txt['file'] = 'File';
+$txt['line'] = 'Line';
+// Use numeric entities in the below string.
+$txt['tried_to_repair'] = 'SMF has detected and automatically tried to repair an error in your database.  If you continue to have problems, or continue to receive these emails, please contact your host.';
+$txt['database_error_versions'] = '<strong>Note:</strong> It appears that your database <em>may</em> require an upgrade. Your forum\'s files are currently at version %1$s, while your database is at version %2$s. The above error might possibly go away if you execute the latest version of upgrade.php.';
+$txt['template_parse_error'] = 'Template Parse Error!';
+$txt['template_parse_error_message'] = 'It seems something has gone sour on the forum with the template system.  This problem should only be temporary, so please come back later and try again.  If you continue to see this message, please contact the administrator.<br /><br />You can also try <a href="javascript:location.reload();">refreshing this page</a>.';
+$txt['template_parse_error_details'] = 'There was a problem loading the <tt><strong>%1$s</strong></tt> template or language file.  Please check the syntax and try again - remember, single quotes (<tt>\'</tt>) often have to be escaped with a slash (<tt>\\</tt>).  To see more specific error information from PHP, try <a href="' . $boardurl . '%1$s">accessing the file directly</a>.<br /><br />You may want to try to <a href="javascript:location.reload();">refresh this page</a> or <a href="' . $scripturl . '?theme=1">use the default theme</a>.';
+
+$txt['today'] = '<strong>ថ្ងៃនេះ</strong> at ';
+$txt['yesterday'] = '<strong>ម្សិលមិញ</strong> at ';
+$txt['new_poll'] = 'New poll';
+$txt['poll_question'] = 'សំនួរ';
+$txt['poll_vote'] = 'Submit Vote';
+$txt['poll_total_voters'] = 'សរុបអ្នកដែលបានបោះឆ្នោត';
+$txt['shortcuts'] = 'shortcuts: hit alt+s to submit/post or alt+p to preview';
+$txt['shortcuts_firefox'] = 'shortcuts: hit shift+alt+s to submit/post or shift+alt+p to preview';
+$txt['poll_results'] = 'មើលលទ្ធផល';
+$txt['poll_lock'] = 'Lock Voting';
+$txt['poll_unlock'] = 'Unlock Voting';
+$txt['poll_edit'] = 'Edit Poll';
+$txt['poll'] = 'Poll';
+$txt['one_day'] = '1 ថ្ងៃ';
+$txt['one_week'] = '1 សប្ដាហ៍';
+$txt['one_month'] = '1 ខែ';
+$txt['forever'] = 'ជារៀងរហូត';
+$txt['quick_login_dec'] = 'Login with username, password and session length';
+$txt['one_hour'] = '1 ម៉ោង';
+$txt['moved'] = 'ត្រូវបានផ្លាស់ប្ដូរ';
+$txt['moved_why'] = 'Please enter a brief description as to<br />why this topic is being moved.';
+$txt['board'] = 'Board';
+$txt['in'] = 'ក្នុង';
+$txt['sticky_topic'] = 'Sticky Topic';
+
+$txt['delete'] = 'លុបចោល';
+
+$txt['your_pms'] = 'សារផ្ទាល់ខ្លួនរបស់អ្នក';
+
+$txt['kilobyte'] = 'KB';
+
+$txt['more_stats'] = '[More Stats]';
+
+// Use numeric entities in the below three strings.
+$txt['code'] = '';
+$txt['code_select'] = '[ជ្រើសរើស]';
+$txt['quote_from'] = 'Quote from';
+$txt['quote'] = 'Quote';
+
+$txt['merge_to_topic_id'] = 'ID of target topic';
+$txt['split'] = 'បំបែកអត្ថបទ';
+$txt['merge'] = 'បញ្ចូលអត្ថបទរួមគ្នា';
+$txt['subject_new_topic'] = 'ប្រធានបទសំរាប់អត្ថបទថ្មី';
+$txt['split_this_post'] = 'Only split this post.';
+$txt['split_after_and_this_post'] = 'Split topic after and including this post.';
+$txt['select_split_posts'] = 'ជ្រើសរើសការ posts​​ ដើម្បីបំបេក.';
+$txt['new_topic'] = 'អត្ថបទថ្មី';
+$txt['split_successful'] = 'ការបំបែកអត្ថបទគឺទទួលបានជោគជ័យក្លាយជាពីរអត្ថបទ.';
+$txt['origin_topic'] = 'Origin Topic';
+$txt['please_select_split'] = 'Please select which posts you wish to split.';
+$txt['merge_successful'] = 'អត្ថបទគឺត្រួវបានរួមបញ្ចូលគ្នា បានដោយជោគជ័យ.';
+$txt['new_merged_topic'] = 'Newly Merged Topic';
+$txt['topic_to_merge'] = 'Topic to be merged';
+$txt['target_board'] = 'Target board';
+$txt['target_topic'] = 'Target topic';
+$txt['merge_confirm'] = 'តើអ្នកប្រាកដទេ ថាចង់រួមបញ្ចូលគ្នា';
+$txt['with'] = 'ជាមួយ';
+$txt['merge_desc'] = 'This function will merge the messages of two topics into one topic. The messages will be sorted according to the time of posting. Therefore the earliest posted message will be the first message of the merged topic.';
+
+$txt['set_sticky'] = 'Set topic sticky';
+$txt['set_nonsticky'] = 'Set topic non-sticky';
+$txt['set_lock'] = 'ចាក់សោរអត្ថបទ';
+$txt['set_unlock'] = 'ដោះសោរអត្ថបទ';
+
+$txt['search_advanced'] = 'Advanced search';
+
+$txt['security_risk'] = 'MAJOR SECURITY RISK:';
+$txt['not_removed'] = 'You have not removed ';
+$txt['not_removed_extra'] = '%1$s is a backup of %2$s that was not generated by SMF. It can be accessed directly and used to gain unauthorised access to your forum. You should delete it immediately.';
+
+$txt['cache_writable_head'] = 'Performance Warning';
+$txt['cache_writable'] = 'The cache directory is not writable - this will adversely affect the performance of your forum.';
+
+$txt['page_created'] = 'ទំព័រត្រូវបានបង្កើត ';
